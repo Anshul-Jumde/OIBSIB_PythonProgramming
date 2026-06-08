@@ -61,6 +61,20 @@ def copy_password():
     app.clipboard_clear()
     app.clipboard_append(password_label.cget("text")
 )     
+    
+def reset_fields():
+    length_entry.delete(0, "end")
+
+    uppercase_var.set("on")
+    lowercase_var.set("on")
+    numbers_var.set("on")
+    symbols_var.set("on")
+
+    password_label.configure(text="----------------")
+    strength_label.configure(
+        text="Strength: --",
+        text_color="white"
+)
               
 app = ctk.CTk()
 app.geometry("600x650")
@@ -177,11 +191,24 @@ strength_label = ctk.CTkLabel(
 )
 strength_label.pack(pady=10)
 
-copy_button = ctk.CTkButton(
+button_frame = ctk.CTkFrame(
     app,
+    fg_color="transparent"
+)
+button_frame.pack(pady=10)
+
+copy_button = ctk.CTkButton(
+    button_frame,
     text="Copy Password",
     command=copy_password
 )
-copy_button.pack(pady=10)
+copy_button.pack(side="left", padx=5)
+
+reset_button = ctk.CTkButton(
+    button_frame,
+    text="Reset",
+    command=reset_fields
+)
+reset_button.pack(side="left", padx=5)
 
 app.mainloop()
