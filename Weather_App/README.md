@@ -30,3 +30,7 @@ Weather App is a Python-based GUI application developed using CustomTkinter. It 
 * Requests Library
 * Datetime Module
 * wttr.in Weather API
+  
+## Outcome
+
+Successfully developed an advanced weather application capable of displaying real-time weather information with an interactive user interface and additional user-friendly features.
