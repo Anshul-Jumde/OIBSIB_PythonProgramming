@@ -1,8 +1,8 @@
-# Smart Password Generator
+# Password Generator
 
 ## Description
 
-Smart Password Generator is a Python-based GUI application developed using CustomTkinter. It generates secure and random passwords based on user-selected criteria such as password length, uppercase letters, lowercase letters, numbers, and symbols.
+Password Generator is a Python-based GUI application developed using CustomTkinter. It generates secure and random passwords based on user-selected criteria such as password length, uppercase letters, lowercase letters, numbers, and symbols.
 
 ## Features
 
