@@ -20,4 +20,6 @@ Smart BMI Health Tracker is a Python GUI application developed using CustomTkint
 * Python
 * Tkinter
 
+## Outcome
 
+Successfully developed a BMI Calculator application that calculates the Body Mass Index (BMI) based on user-provided height and weight. The application accurately determines the BMI category and provides users with a simple and interactive interface for health assessment.
